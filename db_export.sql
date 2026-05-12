@@ -37,8 +37,10 @@ CREATE TABLE IF NOT EXISTS admin (
 ) ENGINE=InnoDB;
 
 -- Seed default admin (password: admin123 — change immediately in production)
+-- Default admin credentials: admin / admin123
+-- Generate a new hash with: php -r "echo password_hash('your_password', PASSWORD_BCRYPT);"
 INSERT INTO admin (username, password_hash)
-VALUES ('admin', '$2y$10$YFJHbGx4c0RzQ0VFT3dNdOe1kFqGzKJwP1v8z8mRjKlL0sMbC8K3i')
+VALUES ('admin', '$2y$10$h7C3sXm.RNIUtwcQZBhikOw2Iig5WI4HbceoNRsFcjQAEPijEVkXq')
 ON DUPLICATE KEY UPDATE username = username;
 
 -- Seed sample projects
