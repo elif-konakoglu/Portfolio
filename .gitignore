@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+*.log
+
+# Dependencies
+node_modules/
+vendor/
+
+# Uploads
+assets/uploads/*
+!assets/uploads/.gitkeep

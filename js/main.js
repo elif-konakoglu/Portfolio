@@ -195,4 +195,42 @@ document.addEventListener('DOMContentLoaded', () => {
             statusEl.textContent = '';
         }
     }
+
+    // ── Scroll Reveal Animation ─────────────────────
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ── Scroll to Top Button ────────────────────────
+    const scrollTopBtn = document.getElementById('scroll-top');
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // ── Typed Effect for Hero Greeting ──────────────
+    const greeting = document.querySelector('.hero-greeting');
+    if (greeting) {
+        const text = greeting.textContent;
+        greeting.textContent = '';
+        greeting.style.visibility = 'visible';
+        let i = 0;
+        const typeInterval = setInterval(() => {
+            greeting.textContent += text.charAt(i);
+            i++;
+            if (i >= text.length) clearInterval(typeInterval);
+        }, 60);
+    }
 });

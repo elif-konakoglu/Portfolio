@@ -60,12 +60,12 @@
     <!-- ═══ About Section ═══ -->
     <section id="about">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>About Me</h2>
                 <p>A blend of engineering discipline and creative problem-solving.</p>
             </div>
             <div class="about-grid">
-                <div class="about-text">
+                <div class="about-text reveal reveal-delay-1">
                     <p>
                         I'm a Software Engineering graduate from Haliç University (2022–2026) with a deep focus on 
                         Artificial Intelligence and Machine Learning. My academic journey has been complemented by 
@@ -82,7 +82,7 @@
                         by a Harvard University spin-off.
                     </p>
                 </div>
-                <div>
+                <div class="reveal reveal-delay-2">
                     <div class="about-info">
                         <div class="about-info-item">
                             <div class="label">Location</div>
@@ -109,12 +109,12 @@
     <!-- ═══ Skills Section ═══ -->
     <section id="skills" class="section-alt">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Technical Skills</h2>
                 <p>Technologies and tools I work with on a daily basis.</p>
             </div>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category reveal">
                     <div class="skill-category-icon">💻</div>
                     <h3>Programming Languages</h3>
                     <div class="skill-tags">
@@ -125,7 +125,7 @@
                         <span class="skill-tag">SQL</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-1">
                     <div class="skill-category-icon">🧠</div>
                     <h3>Deep Learning Frameworks</h3>
                     <div class="skill-tags">
@@ -133,7 +133,7 @@
                         <span class="skill-tag">PyTorch</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-2">
                     <div class="skill-category-icon">📊</div>
                     <h3>ML &amp; Data Science</h3>
                     <div class="skill-tags">
@@ -143,7 +143,7 @@
                         <span class="skill-tag">OpenCV</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-3">
                     <div class="skill-category-icon">🛠️</div>
                     <h3>Dev Tools</h3>
                     <div class="skill-tags">
@@ -151,7 +151,7 @@
                         <span class="skill-tag">Docker</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-4">
                     <div class="skill-category-icon">📚</div>
                     <h3>Core Coursework</h3>
                     <div class="skill-tags">
@@ -170,13 +170,13 @@
     <!-- ═══ Experience Section ═══ -->
     <section id="experience">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Experience</h2>
                 <p>Professional and extracurricular highlights from my journey.</p>
             </div>
             <div class="timeline">
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-header">
                         <h3>Intern SAP ABAP Developer</h3>
                         <span class="timeline-date">Jun 2025 – Jul 2025</span>
@@ -189,7 +189,7 @@
                     </ul>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-header">
                         <h3>Sports Leader</h3>
                         <span class="timeline-date">Mar 2024 – Jun 2025</span>
@@ -202,7 +202,7 @@
                     </ul>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-header">
                         <h3>Samsung Innovation Campus — AI Program</h3>
                         <span class="timeline-date">Nov 2025 – Jan 2026</span>
@@ -214,7 +214,7 @@
                     </ul>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-header">
                         <h3>Google AI &amp; Technology Academy</h3>
                         <span class="timeline-date">Dec 2025 – Present</span>
@@ -226,7 +226,7 @@
                     </ul>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-header">
                         <h3>Aspire Leaders Program</h3>
                         <span class="timeline-date">Jan 2026 – Present</span>
@@ -245,7 +245,7 @@
     <!-- ═══ Projects Section ═══ -->
     <section id="projects" class="section-alt">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Projects</h2>
                 <p>A selection of work showcasing my technical abilities.</p>
             </div>
@@ -257,12 +257,12 @@
     <!-- ═══ Contact Section ═══ -->
     <section id="contact">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h2>Get In Touch</h2>
                 <p>Have a project in mind or want to collaborate? Let's talk.</p>
             </div>
             <div class="contact-grid">
-                <div class="contact-info">
+                <div class="contact-info reveal reveal-delay-1">
                     <h3>Let's work together</h3>
                     <p>
                         I'm always open to new opportunities, collaborations, and interesting conversations 
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form">
+                <form class="contact-form reveal reveal-delay-2" id="contact-form">
                     <div id="form-status" class="form-status"></div>
                     <div class="form-group">
                         <label for="name">Full Name</label>
@@ -341,6 +341,7 @@
         </div>
     </footer>
 
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
     <script src="js/main.js"></script>
 </body>
 </html>
