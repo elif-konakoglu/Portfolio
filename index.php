@@ -51,7 +51,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-graphic">
-                    <span class="hero-initials">EK</span>
+                    <img src="assets/profilephoto.jpg" alt="Elif Semiha Konakoğlu" class="hero-photo">
                 </div>
             </div>
         </div>
