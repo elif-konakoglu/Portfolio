@@ -84,10 +84,10 @@ portfolio/
 
 4. **Start the server**
    - Place the project in your server's document root (e.g., `htdocs/`)
-   - Navigate to `http://localhost/portfolio`
+   - Navigate to `http://elifskonakoglu.infinityfreeapp.com`
 
 5. **Admin access**
-   - Go to `http://localhost/portfolio/admin/login.php`
+   - Go to `http://elifskonakoglu.infinityfreeapp.com/admin/login.php`
    - Default credentials: `admin` / `admin123`
    - **Change the password immediately in production**
 
