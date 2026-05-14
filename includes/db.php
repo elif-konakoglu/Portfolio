@@ -3,10 +3,10 @@
  * Database Connection via PDO
  */
 
-$host = 'localhost';
-$dbname = 'portfolio_db';
-$username = 'root';
-$password = '';
+$host = 'sql308.infinityfree.com';
+$dbname = 'if0_41913653_portfoliodb';
+$username = 'if0_41913653';
+$password = 'rDLxzW1Mxe ';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
